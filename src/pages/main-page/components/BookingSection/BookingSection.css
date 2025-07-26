@@ -1,0 +1,88 @@
+.booking-section {
+  background-color: #ede9e7;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #b44715;
+}
+
+.booking-section h2 {
+  font-size: 3rem;
+  color: #b44715;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.booking-content {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.booking-text {
+  flex-basis: 35%;
+  max-width: 35%;
+  border: 1px solid #b44715;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+
+.booking-text ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.calendly-container {
+  flex-basis: 65%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.calendly-container iframe {
+  width: 100% !important;
+  height: 65% !important;
+  border: none;
+}
+
+
+@media (max-width: 768px) {
+  .booking-section {
+    height: auto;
+    padding: 2rem 1rem;
+    
+  }
+
+  .booking-content {
+    flex-direction: column;
+  }
+
+  .booking-text {
+    width: 85%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .calendly-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .calendly-container iframe {
+    width: 100% !important;
+    height: 70vh !important;
+  }
+  .calendly-container InlineWidghet {
+    width : 90%;
+  }
+}

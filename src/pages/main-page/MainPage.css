@@ -1,0 +1,15 @@
+
+.main-page {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+}
