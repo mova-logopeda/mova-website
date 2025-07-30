@@ -3,7 +3,7 @@ body{
 
 }
 .article-page {
-  padding-left: 5vw;
+  
   margin: 0 auto;
   background-color: #ede9e7;
   color: #b44715;
@@ -20,12 +20,14 @@ body{
 }
 
 .article-title {
+  padding-left: 5vw;
   font-size: 2rem;
   margin-bottom: 10px;
   text-align: left;
 }
 
 .article-date {
+  padding-left: 5vw;
   font-size: 0.9rem;
   margin-bottom: 20px;
   color: #b44715;
@@ -33,7 +35,8 @@ body{
 }
 
 .article-content-wrapper {
-  
+  padding-left: 5vw;
+  margin-bottom: 40vh;
   display: flex;
   align-items: flex-start;
   gap: 30px;
@@ -41,6 +44,7 @@ body{
 }
 
 .article-image {
+  padding-left: 5vw;
   width: 15%;
   min-width: 120px;
   height: auto;
@@ -49,6 +53,7 @@ body{
 }
 
 .article-content {
+  padding-left: 5vw;
   flex: 1;
   max-width: 80%;
 }

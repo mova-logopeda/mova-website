@@ -1,9 +1,9 @@
-// MainPage.jsx
-import React from 'react';
-import HeroSection from './components/HeroSection/HeroSection';
 import AboutSection from './components/AboutSection/AboutSection';
-import BookingSection from './components/BookingSection/BookingSection';
 import ArticlesSection from './components/ArticlesSection/ArticlesSection';
+import BookingSection from './components/BookingSection/BookingSection';
+import Footer from '../../components/footer/Footer';
+import HeroSection from './components/HeroSection/HeroSection';
+import React from 'react';
 
 
 import './MainPage.css';
@@ -16,6 +16,7 @@ const MainPage = () => {
       <AboutSection />
       <BookingSection />
       <ArticlesSection />
+      <Footer />
       
     </div>
   );
