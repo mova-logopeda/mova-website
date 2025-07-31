@@ -2,6 +2,10 @@ import "./Footer.css";
 import React from "react";
 
 const Footer = () => {
+   const handleManageCookies = () => {
+    localStorage.removeItem('cookieConsent');
+    window.location.reload(); 
+  };
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -21,6 +25,9 @@ const Footer = () => {
             <a href="/polityka-prywatnosci" target="_blank" rel="noopener noreferrer">
               Polityka Prywatności
             </a>
+            <button className="manage-cookies-btn" onClick={handleManageCookies}>
+        Zarządzaj cookies
+      </button>
           </div>
         </div>
       </div>
