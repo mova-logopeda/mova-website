@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="footer-image" />
         <div className="footer-text">
           <h2>NAPISZ DO NAS</h2>
-          <p>Zadzwoń - 012 3456789</p>
-          <p>Napisz - ciao@granbelsito.com</p>
+          <p>Zadzwoń - +48509729883</p>
+          <p>Napisz - logostudio.online@gmail.com </p>
           <div className="footer-icons">
             <i className="fa-brands fa-linkedin-in" />
             <i className="fa-brands fa-instagram" />
