@@ -1,13 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ArticlePage from './pages/article-page/ArticlePage.jsx';
-import CookieBanner from './components/footer/cookie-banner/CookieBanner.jsx';
+import CookieBanner from './components/cookie-banner/CookieBanner.jsx';
 import MainPage from './pages/main-page/MainPage.jsx';
 import PrivacyPolicy from './pages/privacy-policy/PrivacyPolicy.jsx';
+import ScrollToTop from './components/scroll-to-top/ScrollToTop.jsx';
 import React from 'react';
+import './App.css'; // Import global styles if needed
 
 function App() {
   return (
     <Router>
+      <ScrollToTop /> 
       <CookieBanner />
       <Routes>
         <Route path="/" element={<MainPage />} />
