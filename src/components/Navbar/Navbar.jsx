@@ -1,17 +1,32 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
-  const closeMenu = () => {
-    setIsOpen(false);
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    closeMenu();
+
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const scrollTarget = document.getElementById(targetId);
+        if (scrollTarget) {
+          scrollTarget.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
   };
 
   return (
@@ -26,9 +41,11 @@ const Navbar = () => {
         </div>
 
         <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
-          <li><a href="#about" onClick={closeMenu}>O nas</a></li>
-          <li><a href="#articles" onClick={closeMenu}>Dla rodzica</a></li>
-          <li><a href="#booking" onClick={closeMenu}>Umów się</a></li>
+          <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')}>kim jesteśmy</a></li>
+          <li><a href="#articles" onClick={(e) => handleNavClick(e, 'articles')}>usługi</a></li>
+          <li><a href="#booking" onClick={(e) => handleNavClick(e, 'booking')}>dla pacjenta</a></li>
+          <li><a href="#articles" onClick={(e) => handleNavClick(e, 'articles')}>dla rodzica</a></li>
+          <li><a href="#footer" onClick={(e) => handleNavClick(e, 'footer')}>kontakt</a></li>
         </ul>
       </div>
     </nav>

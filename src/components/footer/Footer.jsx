@@ -7,7 +7,7 @@ const Footer = () => {
     window.location.reload(); 
   };
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer-container">
         <div className="footer-image" />
         <div className="footer-text">
