@@ -17,7 +17,7 @@ const BookingSection = () => {
         </div>
 
         <div className="calendly-container">
-          <InlineWidget url="https://calendly.com/plubrycht/30-minute-meeting-clone" />
+          <InlineWidget url="https://calendly.com/logostudio-online/30min" />
         </div>
       </div>
     </section>
