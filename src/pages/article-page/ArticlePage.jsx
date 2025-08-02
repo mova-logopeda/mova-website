@@ -1,8 +1,9 @@
-import React from 'react';
-import { useParams,  } from 'react-router-dom';
-import { articlesData } from '../../data/ArticlesData';
 import './ArticlePage.css';
+import { articlesData } from '../../data/ArticlesData';
+import { useParams,  } from 'react-router-dom';
+import Footer from '../../components/footer/Footer.jsx';
 import Navbar from '../main-page/components/Navbar/Navbar';
+import React from 'react';
 
 const ArticlePage = () => {
   const { id } = useParams();
@@ -41,8 +42,11 @@ const ArticlePage = () => {
           })}
         </div>
       </div>
+    <Footer />
     </div>
+    
   );
+  
 };
 
 export default ArticlePage;
