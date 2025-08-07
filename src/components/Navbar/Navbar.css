@@ -1,10 +1,11 @@
 .navbar {
-  background-color: #ede9e7; 
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: none; 
+  background: linear-gradient(to left, #f3e5cb,#a19086);
+  opacity: 0.7;
 }
 
 .navbar-container {
@@ -16,10 +17,15 @@
 }
 
 .navbar-logo {
-  font-size: 1.7rem;
-  font-weight: bold;
-  color: #b44715;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .menu-icon {
@@ -30,20 +36,48 @@
 
 .nav-menu {
   display: flex;
-  gap: 2rem;
+  justify-content: space-around;
   list-style: none;
+  width: 80%;
+  padding-right: 30px;
+  height: 50px;
+  align-items: center;
+  border-radius: 50px;
 }
 
 .nav-menu li a {
+  font-family: Playfair Display, serif;
   text-decoration: none;
-  color: #b44715;
-  font-weight: 500;
-  font-size: 1.1rem;
+  color: #000000;
+  font-weight: 300;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
 }
 
 .nav-menu li a:hover {
   color: #7a5f4a;
 }
+
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; 
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #7a5f4a;
+  transition: width 0.3s ease;
+}
+
+.nav-menu li a:hover::after,
+.nav-menu li a:focus::after,
+.nav-menu li a:active::after {
+  width: 100%;
+}
+
 
 @media screen and (max-width: 768px) {
   .menu-icon {
@@ -52,18 +86,25 @@
 
   .nav-menu {
     position: absolute;
-    top: 60px; 
+    top: 150px; 
     left: 0;
     width: 100%;
-    background-color: #ede9e7;
+    background-color: #d3dcc3;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
     gap: 1rem;
     display: none;
+    height: auto;
   }
 
   .nav-menu.active {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    border-radius: 0;
+        
   }
 }
