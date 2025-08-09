@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import { FiMenu, FiX } from 'react-icons/fi';
+import logo from '../../assets/images/result (1).png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          Mowa
+          <img src={logo} alt="Logo" className="logo" />
         </Link>
 
         <div className="menu-icon" onClick={toggleMenu}>

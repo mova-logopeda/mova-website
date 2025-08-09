@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import Navbar from '../../../../components/Navbar/Navbar';
-import heroImage from '../../../../assets/images/IMG_2122.JPG';
+
 
 const HeroSection = () => {
   const scrollToSection = (id) => {
@@ -14,17 +14,12 @@ const HeroSection = () => {
   return (
     <div className="hero-section" id="hero">
       <Navbar />
-      <div className="hero-content">
-        <div className="hero-text">
-          <h1>Umów się na<br />bezpłatną<br />diagnostykę mowy!</h1>
-          <p>Umów się na bezpłatną diagnostykę logopedyczną i rozpoznaj drogę do pięknej mowy!</p>
+          <div className="hero-content">
+          <h1>Umów się na bezpłatną diagnostykę mowy!</h1>
           <button onClick={() => scrollToSection('booking')}>Umów się</button>
-        </div>
-        <div className="hero-image">
-          <img src={heroImage} alt="Logopeda z dzieckiem" />
-        </div>
+          </div>  
       </div>
-    </div>
+    
   );
 };
 
