@@ -22,8 +22,13 @@ const BookingSection = () => {
 
   return (
     <section className="booking-section" id="booking">
-      <h2>Jak się umówić?</h2>
+      <div className="booking-header-wrapper">  
+      <div className="booking-header">
+        <h2>Jak się umówić?</h2>
+      </div>
+      </div>
       <div className="booking-content">
+        <div className="booking-text-wrapper">
         <div className="booking-text">
           <ul>
             <li>wybierz termin wizyty</li>
@@ -31,6 +36,7 @@ const BookingSection = () => {
             <li>otrzymasz link do spotkania</li>
             <li>resztę zostaw w rękach naszego doświadczonego specjalisty</li>
           </ul>
+        </div>
         </div>
 
         <div className="calendly-container">
