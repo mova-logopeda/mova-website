@@ -5,6 +5,7 @@ import ArticlesSection from './components/ArticlesSection/ArticlesSection';
 import BookingSection from './components/BookingSection/BookingSection';
 import Footer from '../../components/footer/Footer';
 import HeroSection from './components/HeroSection/HeroSection';
+import ServicesSection from './components/ServicesSection/ServicesSection';
 
 
 
@@ -17,6 +18,7 @@ const MainPage = () => {
       <HeroSection />
       <AboutSection />
       <BookingSection />
+      <ServicesSection />
       <ArticlesSection />
       <Footer />
       
