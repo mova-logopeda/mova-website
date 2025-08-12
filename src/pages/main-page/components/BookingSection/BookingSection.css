@@ -1,6 +1,6 @@
 .booking-section {
-  background-color: #ede9e7;
-  height: 100vh;
+  background-color: #fafaf8;
+  height: 110vh;
   box-sizing: border-box;
   padding: 3rem 2rem;
   display: flex;
@@ -8,11 +8,28 @@
   color: #b44715;
 }
 
-.booking-section h2 {
-  font-size: 3rem;
-  color: #b44715;
-  text-align: left;
+.booking-header-wrapper {
+  width: 100%;             
+  display: flex;           
+  justify-content: center; 
   margin-bottom: 2rem;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #4a4a4a;
+}
+
+.booking-header {
+  background-color: #d3dcc3;
+  padding: 20px 40px;
+  border-radius: 35px;  
+  display: inline-block; 
+}
+
+.booking-header h2 {
+  font-size: 3rem;
+  color: #333333;
+  font-family: 'Playfair Display', serif;
+  margin: 0; 
+  text-align: center;
 }
 
 .booking-content {
@@ -21,23 +38,38 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
+  padding-top: 40px;
+  
+}
+
+.booking-text-wrapper {
+  flex-basis: 35%;
+  max-width: 35%;
+  border: 1px solid #4a5a3a;
+  border-radius: 12px; 
+  padding: 3px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
 
 .booking-text {
-  flex-basis: 35%;
-  max-width: 35%;
-  border: 1px solid #b44715;
+  border: 2px dotted #4a5a3a; 
+  border-radius: 10px;
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: auto;
+  height: 100%;
 }
 
 .booking-text ul {
   list-style: disc;
   padding-left: 1.5rem;
   font-size: 1.2rem;
+  font-family: 'Lora' , serif;
+  color: #3e3e3e;
 }
 
 .calendly-container {
@@ -75,9 +107,12 @@
   }
 
   .booking-text {
-    width: 85%;
+    width: auto;
     max-width: 100%;
     padding: 1.5rem;
+  }
+  .booking-text-wrapper {
+    max-width: none;
   }
 
   .calendly-container {
