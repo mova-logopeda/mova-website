@@ -6,6 +6,7 @@
   box-shadow: none; 
   background: linear-gradient(to left, #f3e5cb,#a19086);
   opacity: 0.7;
+  border-radius: 0 0 0 10%;
 }
 
 .navbar-container {
