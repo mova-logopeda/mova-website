@@ -10,8 +10,8 @@ const ServicesSection = () => {
   };
 
   return (
-    <section className="services-section">
-      <h2 className="services-title">Usługi</h2>
+    <section className="services-section" >
+      <h2 className="services-title" id="services">Usługi</h2>
       <div className="services-line"></div>
       <p className="services-subtitle">
         Oferujemy kompleksową opiekę logopedyczną dostosowaną do potrzeb dzieci i dorosłych.
