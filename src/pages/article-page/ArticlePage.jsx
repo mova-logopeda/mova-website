@@ -1,6 +1,6 @@
 import './ArticlePage.css';
 import { articlesData } from '../../data/ArticlesData';
-import { useParams,  } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Footer from '../../components/footer/Footer.jsx';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import React from 'react';
@@ -14,17 +14,22 @@ const ArticlePage = () => {
   return (
     <div className="article-page">
       <Navbar />
-      <h1 className="article-title">{article.title}</h1>
-      <p className="article-date">{article.date}</p>
-      <div className="article-content-wrapper">
+      <div className="article-main">
         {article.image && (
-          <img
-            src={article.image}
-            alt={article.title}
-            className="article-image"
-          />
+          <div className="article-image-wrapper">
+            <img
+              src={article.image}
+              alt={article.title}
+              className="article-image"
+            />
+          </div>
         )}
-        <div className="article-content">
+        <div className="article-text" >
+          <header className="article-header">
+          <h1 className="article-title">{article.title}</h1>
+          
+          </header>
+          <div className="article-content-wrapper">
           {article.content.map((block, index) => {
             if (block.type === 'paragraph') {
               return <p key={index}>{block.text}</p>;
@@ -40,13 +45,13 @@ const ArticlePage = () => {
             }
             return null;
           })}
+          <p className="article-date">{article.date}</p>
+          </div>
         </div>
       </div>
-    <Footer />
+      <Footer />
     </div>
-    
   );
-  
 };
 
 export default ArticlePage;
