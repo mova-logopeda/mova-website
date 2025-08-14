@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import { FiMenu, FiX } from 'react-icons/fi';
-import logo from '../../assets/images/result (1).png'
+import logo from '../../assets/images/logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
