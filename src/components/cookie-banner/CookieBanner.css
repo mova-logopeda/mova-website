@@ -2,9 +2,9 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #ede9e7;
-  border-top: 2px solid #b44715;
-  color: #b44715;
+  background: #fafaf8;
+  border-top: 2px solid #2f4633;
+  color: #2f4633;
   padding: 1.5rem;
   z-index: 9999;
 }
@@ -19,6 +19,8 @@
   justify-content: space-between;
   margin: 0.5rem 0;
   font-size: 1.1rem;
+  font-family: 'Lora' , serif;
+  color: #3e3e3e;
 }
 
 .cookie-actions {
@@ -29,7 +31,8 @@
 }
 
 .cookie-actions button {
-  background-color: #b44715;
+  background-color: #2f4633;
+  font-family: Playfair Display, serif;
   color: white;
   border: none;
   padding: 0.6rem 1.2rem;

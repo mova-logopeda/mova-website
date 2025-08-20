@@ -43,7 +43,7 @@ const Navbar = () => {
 
         <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
           <li><a href="#about" onClick={(e) => handleNavClick(e, 'about')}>kim jesteśmy</a></li>
-          <li><a href="#articles" onClick={(e) => handleNavClick(e, 'articles')}>usługi</a></li>
+          <li><a href="#services" onClick={(e) => handleNavClick(e, 'services')}>usługi</a></li>
           <li><a href="#booking" onClick={(e) => handleNavClick(e, 'booking')}>dla pacjenta</a></li>
           <li><a href="#articles" onClick={(e) => handleNavClick(e, 'articles')}>dla rodzica</a></li>
           <li><a href="#footer" onClick={(e) => handleNavClick(e, 'footer')}>kontakt</a></li>

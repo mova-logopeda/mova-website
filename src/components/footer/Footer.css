@@ -1,6 +1,7 @@
 .footer {
   background-color: #2f4633;
   height: 75vh;
+  max-height: 500px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -67,8 +68,15 @@
   margin:15px 0;
 }
 
-.footer-icons i {
+.footer-icons a {
+  color: inherit;
+  font-size: inherit;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  opacity: 0.8;
 }
 
 .privacy-link {

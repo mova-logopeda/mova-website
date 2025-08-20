@@ -93,6 +93,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .services-title {
+    font-size: 2.5rem;
+  }
+
   .services-section {
     height: auto;
     padding: 3rem 1rem;

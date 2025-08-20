@@ -19,10 +19,32 @@ const Footer = () => {
             <p>Napisz - logostudio.online@gmail.com </p>
             </div>
             <div className="footer-icons">
-              <i className="fa-brands fa-linkedin-in" />
-              <i className="fa-brands fa-instagram" />
-              <i className="fa-brands fa-facebook-f" />
-              <i className="fa-brands fa-twitter" />
+              <a
+                href="link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i className="fa-brands fa-linkedin-in" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/mova.logopedaonline/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i className="fa-brands fa-instagram" />
+              </a>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61566148492303&locale=pl_PL"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <i className="fa-brands fa-facebook-f" />
+              </a>
             </div>
           </div>
           <div className="footer-bottom-links">
