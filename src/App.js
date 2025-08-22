@@ -8,13 +8,13 @@ import React from 'react';
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import { useEffect } from 'react';// Import global styles if needed
+import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 800, // czas animacji w ms
-      once: true,    // animacja tylko raz przy przewinięciu
+      duration: 800, 
+      once: true,
     });
   }, []);
   return (
