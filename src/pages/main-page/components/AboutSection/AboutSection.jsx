@@ -1,5 +1,7 @@
 import React from 'react';
 import './AboutSection.css';
+import Ewelina from "../../../../assets/images/Ewelina.jpg";
+import EwelinaBooks from "../../../../assets/images/Ewelina books.jpg";
 
 const AboutSection = () => {
   return (
@@ -9,10 +11,9 @@ const AboutSection = () => {
           <div className="about-content-up-left">
             <div className="about-up-picture-container">
               <img
-                src={require('../../../../assets/images/IMG_2122.JPG')}
+                src={Ewelina}
                 alt="Zespół logopedyczny"
               />
-              <span className="about-up-black-border" aria-hidden="true"></span>
             </div>
           </div>
           <div className="about-content-up-right">
@@ -34,7 +35,7 @@ const AboutSection = () => {
           <div className="about-content-down-left">
             <div className="about-down-picture-container">
               <img
-                src={require('../../../../assets/images/IMG_2122.JPG')}
+                src={EwelinaBooks}
                 alt="Zespół logopedyczny"
               />
             </div>

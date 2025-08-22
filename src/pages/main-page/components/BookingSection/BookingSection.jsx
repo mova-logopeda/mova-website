@@ -30,12 +30,12 @@ const BookingSection = () => {
       <div className="booking-content">
         <div className="booking-text-wrapper">
         <div className="booking-text">
-          <ul>
+          <ol>
             <li>wybierz termin wizyty</li>
             <li>wypełnij formularz zgłoszeniowy</li>
             <li>otrzymasz link do spotkania</li>
             <li>resztę zostaw w rękach naszego doświadczonego specjalisty</li>
-          </ul>
+          </ol>
         </div>
         </div>
 

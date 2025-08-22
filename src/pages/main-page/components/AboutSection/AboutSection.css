@@ -248,6 +248,11 @@
 
 /* ------------------ RESPONSIVE (mobile) ------------------ */
 @media (max-width: 900px) {
+  .about-inner,
+  .about-inner-down{
+    max-height: none;
+  }
+
   .about-inner {
     flex-direction: column;
     padding: 28px 6%;
@@ -262,9 +267,11 @@
 
   .about-up-picture-container,
   .about-down-picture-container {
-    width: 100%;
+    width: 60%;
     height: auto;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
   }
   .about-up-picture-container img,
   .about-down-picture-container img {
