@@ -28,7 +28,7 @@ const BookingSection = () => {
       </div>
       </div>
       <div className="booking-content">
-        <div className="booking-text-wrapper">
+        <div className="booking-text-wrapper" data-aos="fade-up" >
         <div className="booking-text">
           <ol>
             <li>wybierz termin wizyty</li>

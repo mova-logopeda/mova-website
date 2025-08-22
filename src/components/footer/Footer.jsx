@@ -1,6 +1,6 @@
 import "./Footer.css";
 import React from "react";
-import logo from '../../assets/images/logo.png'
+import logo from 'assets/images/logo.png'
 
 const Footer = () => {
    const handleManageCookies = () => {

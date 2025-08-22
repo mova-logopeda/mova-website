@@ -8,7 +8,7 @@ const ArticleCard = ({ article }) => {
   const { id, title, shortText, image, date } = article;
 
   return (
-    <div className="article-card">
+    <div className="article-card" data-aos="fade-up" >
       <img src={image} alt={title} />
       <div className="article-info">
         <div className="article-top">

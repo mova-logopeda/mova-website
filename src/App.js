@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ArticlePage from './pages/article-page/ArticlePage.jsx';
-import CookieBanner from './components/cookie-banner/CookieBanner.jsx';
-import MainPage from './pages/main-page/MainPage.jsx';
-import PrivacyPolicy from './pages/privacy-policy/PrivacyPolicy.jsx';
-import ScrollToTop from './components/scroll-to-top/ScrollToTop.jsx';
+import ArticlePage from 'pages/article-page/ArticlePage.jsx';
+import CookieBanner from 'components/cookie-banner/CookieBanner.jsx';
+import MainPage from 'pages/main-page/MainPage.jsx';
+import PrivacyPolicy from 'pages/privacy-policy/PrivacyPolicy.jsx';
+import ScrollToTop from 'components/scroll-to-top/ScrollToTop.jsx';
 import React from 'react';
 import './App.css';
 import AOS from 'aos';

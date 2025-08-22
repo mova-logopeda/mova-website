@@ -1,9 +1,9 @@
-import article1img from "../assets/images/image2.jpg"
-import article2img from "../assets/images/image3.jpg"
-import article3img from "../assets/images/image4.jpg"
-import article4img from "../assets/images/image5.jpg"
-import article5img from "../assets/images/image6.jpg"
-import article6img from "../assets/images/image7.jpg"
+import article1img from "assets/images/image2.jpg"
+import article2img from "assets/images/image3.jpg"
+import article3img from "assets/images/image4.jpg"
+import article4img from "assets/images/image5.jpg"
+import article5img from "assets/images/image6.jpg"
+import article6img from "assets/images/image7.jpg"
 
 
 export const articlesData = [
