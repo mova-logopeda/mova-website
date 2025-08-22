@@ -18,13 +18,13 @@ const ServicesSection = () => {
       </p>
 
       <div className="services-grid">
-        <div className="service-card beige1">Konsultacja <br />logopedyczna</div>
-        <div className="service-card beige2">Terapie <br />logopedyczne</div>
-        <div className="service-card beige3">Diagnozy <br />logopedyczne</div>
-        <div className="service-card beige4">Terapie <br />neurologopedyczne</div>
+        <div className="service-card beige1" data-aos="fade-up" >Konsultacja <br />logopedyczna</div>
+        <div className="service-card beige2" data-aos="fade-up" >Terapie <br />logopedyczne</div>
+        <div className="service-card beige3" data-aos="fade-up" >Diagnozy <br />logopedyczne</div>
+        <div className="service-card beige4" data-aos="fade-up" >Terapie <br />neurologopedyczne</div>
       </div>
 
-      <a href="#booking" className="services-button" onClick={handleScroll}> 
+      <a href="#booking" className="services-button" onClick={handleScroll} data-aos="fade-up" > 
         Umów się na wizytę
       </a>
     </section>

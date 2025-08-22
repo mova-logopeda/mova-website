@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutSection.css';
-import Ewelina from "../../../../assets/images/Ewelina.jpg";
-import EwelinaBooks from "../../../../assets/images/Ewelina books.jpg";
+import Ewelina from "assets/images/Ewelina.jpg";
+import EwelinaBooks from "assets/images/Ewelina books.jpg";
 
 const AboutSection = () => {
   return (
@@ -19,7 +19,7 @@ const AboutSection = () => {
           <div className="about-content-up-right">
             <h2>Z pasją i wiedzą</h2>
             <div className="about-up-underline" aria-hidden="true" />
-            <p>
+            <p data-aos="fade-up"  >
               Mowa to przestrzeń dla dziecka, dla rodzica, dla logopedy. Jesteśmy tu DLA WAS.
               Pracowaliśmy z jedną osobą w regularnym prowadzeniu mowy i z trudnymi dorosłymi,
               w celu odbudowania relacji z komunikacją. Lubimy być w terenie: wyjazdy do
@@ -43,7 +43,7 @@ const AboutSection = () => {
           <div className="about-content-down-right">
             <div className="about-down-text-box">
               <h2>O nas</h2>
-              <p>
+              <p data-aos="fade-up" >
                 Nazywam się Ewelina Lubrycht. Jestem logopedą ze specjalizacją
                 neurologopedii i wczesnej interwencji logopedycznej. Swój dyplom
                 uzyskałam studiując na Uniwersytecie Gdańskim i Gdańskim Uniwersytecie

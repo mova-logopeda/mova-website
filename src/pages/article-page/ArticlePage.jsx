@@ -1,8 +1,8 @@
 import './ArticlePage.css';
-import { articlesData } from '../../data/ArticlesData';
+import { articlesData } from 'data/ArticlesData';
 import { useParams } from 'react-router-dom';
-import Footer from '../../components/footer/Footer.jsx';
-import Navbar from '../../components/Navbar/Navbar.jsx';
+import Footer from 'components/footer/Footer.jsx';
+import Navbar from 'components/Navbar/Navbar.jsx';
 import React from 'react';
 
 const ArticlePage = () => {

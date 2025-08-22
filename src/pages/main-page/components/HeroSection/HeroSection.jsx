@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-import Navbar from '../../../../components/Navbar/Navbar';
+import Navbar from 'components/Navbar/Navbar';
 
 
 const HeroSection = () => {

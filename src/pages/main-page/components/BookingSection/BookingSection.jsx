@@ -22,21 +22,21 @@ const BookingSection = () => {
 
   return (
     <section className="booking-section" id="booking">
-      <div className="booking-header-wrapper">  
-      <div className="booking-header">
-        <h2>Jak się umówić?</h2>
-      </div>
-      </div>
       <div className="booking-content">
-        <div className="booking-text-wrapper">
-        <div className="booking-text">
-          <ol>
-            <li>wybierz termin wizyty</li>
-            <li>wypełnij formularz zgłoszeniowy</li>
-            <li>otrzymasz link do spotkania</li>
-            <li>resztę zostaw w rękach naszego doświadczonego specjalisty</li>
-          </ol>
-        </div>
+        <div className="booking-left-side">
+          <div className="booking-header">
+            <h2>Jak się umówić?</h2>
+          </div>
+          <div className="booking-text-wrapper" data-aos="fade-up">
+            <div className="booking-text">
+              <ol>
+                <li><span className="step-number">1</span> wybierz termin wizyty</li>
+                <li><span className="step-number">2</span> wypełnij formularz zgłoszeniowy</li>
+                <li><span className="step-number">3</span> otrzymasz link do spotkania</li>
+                <li><span className="step-number">4</span> resztę zostaw w rękach naszego doświadczonego specjalisty</li>
+              </ol>
+            </div>
+          </div>
         </div>
 
         <div className="calendly-container">

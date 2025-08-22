@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import ArticleCard from './ArticleCard';
-import { articlesData } from '../../../../data/ArticlesData';
+import { articlesData } from 'data/ArticlesData';
 import './ArticlesSection.css';
 
 const ArticlesSection = () => {
