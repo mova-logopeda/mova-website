@@ -22,14 +22,14 @@
   bottom: -45px;
   left:0;
   width: 45vw;
-  background-image: url("../../assets/images/IMG_2122.JPG");
+  background-image: url("../../assets/images/image7.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 0 50% 50% 0;
 }
 
 .footer-text {
-  margin-left: 60vw; 
+  margin-left: 60vw;  
   width: auto;
   display: flex;
   padding-top: 20px;
