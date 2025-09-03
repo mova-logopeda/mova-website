@@ -21,7 +21,7 @@ const CookieBanner = () => {
  const loadGoogleAnalytics = () => {
   if (!window.gtagInitialized) {
     const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-3CY6JF4NRF';
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-K9QBFSDRSN';
     script.async = true;
     document.head.appendChild(script);
 
@@ -32,7 +32,7 @@ const CookieBanner = () => {
     window.gtag = gtag; 
 
     gtag('js', new Date());
-    gtag('config', 'G-3CY6JF4NRF');
+    gtag('config', 'G-K9QBFSDRSN');
     window.gtagInitialized = true;
   }
 };
