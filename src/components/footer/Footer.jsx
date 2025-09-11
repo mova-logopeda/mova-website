@@ -1,12 +1,31 @@
 import "./Footer.css";
-import React from "react";
 import logo from 'assets/images/logo.png'
+import React from "react";
+import { useNavigate } from 'react-router-dom'; 
 
 const Footer = () => {
-   const handleManageCookies = () => {
+  const handleManageCookies = () => {
     localStorage.removeItem('cookieConsent');
     window.location.reload(); 
   };
+
+  const navigate = useNavigate();
+
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        const scrollTarget = document.getElementById(targetId);
+        if (scrollTarget) scrollTarget.scrollIntoView({behavior: 'smooth'});
+      }, 100);
+    }
+  };
+
   return (
     <footer className="footer" id="footer">
       <div className="footer-text">
@@ -40,10 +59,10 @@ const Footer = () => {
         </div>
 
         <div className="footer-nav-links">
-          <a href="#about">Kim jesteśmy</a>
-          <a href="#services">Usługi</a>
-          <a href="#booking">Umów wizytę</a>
-          <a href="#articles">Dla rodzica</a>
+          <a href="#about" onClick={(e) => handleNavClick(e,'about')} >Kim jesteśmy</a>
+          <a href="#services"  onClick={(e) => handleNavClick(e,'services')} >Usługi</a>
+          <a href="#booking" onClick={(e) => handleNavClick(e,'booking')} >Umów wizytę</a>
+          <a href="#articles" onClick={(e) => handleNavClick(e,'articles')} >Dla rodzica</a>
         </div>
 
       
