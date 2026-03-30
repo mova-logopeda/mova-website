@@ -1,25 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ArticlePage from 'pages/article-page/ArticlePage.jsx';
-import CookieBanner from 'components/cookie-banner/CookieBanner.jsx';
-import MainPage from 'pages/main-page/MainPage.jsx';
-import PrivacyPolicy from 'pages/privacy-policy/PrivacyPolicy.jsx';
-import ScrollToTop from 'components/scroll-to-top/ScrollToTop.jsx';
-import React from 'react';
-import './App.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ArticlePage from "pages/article-page/ArticlePage.jsx";
+import CookieBanner from "components/cookie-banner/CookieBanner.jsx";
+import MainPage from "pages/main-page/MainPage.jsx";
+import PrivacyPolicy from "pages/privacy-policy/PrivacyPolicy.jsx";
+import ScrollToTop from "components/scroll-to-top/ScrollToTop.jsx";
+import React from "react";
+import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 800, 
+      duration: 800,
       once: true,
     });
   }, []);
   return (
     <Router>
-      <ScrollToTop /> 
+      <ScrollToTop />
       <CookieBanner />
       <Routes>
         <Route path="/" element={<MainPage />} />
