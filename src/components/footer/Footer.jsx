@@ -1,7 +1,7 @@
 import "./Footer.css";
 import logo from "assets/images/logo.png";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Footer = () => {
   const handleManageCookies = () => {
@@ -71,13 +71,7 @@ const Footer = () => {
 
       <div className="footer-bottom-links">
         <div className="privacy-link">
-          <a
-            href="https://movalogopeda.pl/polityka-prywatnosci"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Polityka Prywatności
-          </a>
+          <Link to="/polityka-prywatnosci">Polityka Prywatności</Link>
           <button className="manage-cookies-btn" onClick={handleManageCookies}>
             Zarządzaj cookies
           </button>
