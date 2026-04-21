@@ -17,13 +17,12 @@ const AboutSection = () => {
             <h2>Z pasją i wiedzą</h2>
             <div className="about-up-underline" aria-hidden="true" />
             <p data-aos="fade-up">
-              Mowa to przestrzeń dla dziecka, dla rodzica, dla logopedy.
-              Jesteśmy tu DLA WAS. Pracowaliśmy z jedną osobą w regularnym
-              prowadzeniu mowy i z trudnymi dorosłymi, w celu odbudowania
-              relacji z komunikacją. Lubimy być w terenie: wyjazdy do
-              przedszkoli, placówek, spotkania domowe. Lubimy też współpracę
-              logopedyczną, działamy zespołowo, naturalnie dzielimy się naszymi
-              doświadczeniami i zmieniamy je na konkretne działania.
+              Mova to przestrzeń dla dziecka, dla rodzica, dla logopedy,
+              Jesteśmy tu DLA WAS. Powstaliśmy z ideą pomocy w rozwijaniu
+              prawidłowej mowy u dzieci i dorosłych, w celu edukowania rodziców
+              w temacie komunkacji, karmienia, zabawy, rozwoju. Jesteśmy tu
+              także by wspierać logopedów, służymy gotowymi narzędziami, a także
+              doświadczeniem i wiedzą na temat diagnozy i terapii mowy.
             </p>
           </div>
         </div>
